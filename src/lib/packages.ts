@@ -294,7 +294,10 @@ const actOnTailwindGenerator = (
       codeToCopy = ``;
       break;
     case 'box-shadow':
-      codeToCopy = `shadow-[${element.boxShadow.replace(/ /g, '_')}]`; //  .replace(/ /g,"_") for replacing spaces with '_'.
+      codeToCopy = `h-18.75 w-18.75 shadow-[${element.boxShadow.replace(
+        / /g,
+        '_'
+      )}]`; //  .replace(/ /g,"_") for replacing spaces with '_'.
       break;
     case 'text-shadow':
       codeToCopy = ``;
